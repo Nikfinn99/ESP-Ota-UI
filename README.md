@@ -44,3 +44,8 @@ The releases are created for Windows.
 12. Select `Program` or `SPIFFS` as target location.
 13. Click Upload
 14. The upload progress is displayed on the `Upload` tab.
+
+|![upload serial](https://raw.githubusercontent.com/Nikfinn99/ESP-Ota-UI/master/images/upload_serial.jpg)|![upload ip](https://raw.githubusercontent.com/Nikfinn99/ESP-Ota-UI/master/images/upload_ip.jpg)|
+|-|-|
+|![add device](https://github.com/Nikfinn99/ESP-Ota-UI/blob/master/images/add_device.jpg?raw=true)|![add device 2](https://github.com/Nikfinn99/ESP-Ota-UI/blob/master/images/add_device2.jpg?raw=true)|
+|![console output](https://github.com/Nikfinn99/ESP-Ota-UI/blob/master/images/console_output.jpg?raw=true)||
