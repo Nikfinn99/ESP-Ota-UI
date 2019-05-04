@@ -71,6 +71,7 @@ void MainWindow::loadConfig(){
     esp.erase_flash = setup.value ("esp/erase_flash",false).toBool ();
     ui->cbEraseFlash->setChecked (esp.erase_flash);
 
+    ui->twTabs->setCurrentIndex (0);
 }
 
 void MainWindow::saveConfig(){

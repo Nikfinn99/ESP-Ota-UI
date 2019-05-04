@@ -37,6 +37,18 @@
         <string>Upload</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_5">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_3">
           <item>
@@ -136,6 +148,18 @@
               <string>Serial</string>
              </attribute>
              <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,1,1">
+              <property name="leftMargin">
+               <number>5</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
               <item>
                <widget class="QWidget" name="widget_2" native="true">
                 <property name="minimumSize">
@@ -276,6 +300,18 @@
               <string>IP</string>
              </attribute>
              <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,1,1,1">
+              <property name="leftMargin">
+               <number>5</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
               <item>
                <widget class="QWidget" name="widget_3" native="true">
                 <property name="minimumSize">
@@ -520,6 +556,18 @@
         <string>Devices</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
         <item>
          <widget class="QTableWidget" name="twDevices">
           <property name="minimumSize">
@@ -567,6 +615,18 @@
            <string>New Device</string>
           </property>
           <layout class="QGridLayout" name="gridLayout">
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>11</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
            <item row="0" column="0">
             <layout class="QVBoxLayout" name="verticalLayout_13">
              <item>
@@ -601,15 +661,15 @@
               <widget class="QWidget" name="widget_6" native="true">
                <property name="minimumSize">
                 <size>
-                 <width>210</width>
-                 <height>45</height>
+                 <width>191</width>
+                 <height>30</height>
                 </size>
                </property>
                <widget class="QSpinBox" name="sbNewDeviceIP0">
                 <property name="geometry">
                  <rect>
-                  <x>10</x>
-                  <y>10</y>
+                  <x>0</x>
+                  <y>0</y>
                   <width>41</width>
                   <height>30</height>
                  </rect>
@@ -633,8 +693,8 @@
                <widget class="QLabel" name="label_3">
                 <property name="geometry">
                  <rect>
-                  <x>103</x>
-                  <y>20</y>
+                  <x>93</x>
+                  <y>15</y>
                   <width>16</width>
                   <height>16</height>
                  </rect>
@@ -646,8 +706,8 @@
                <widget class="QSpinBox" name="sbNewDeviceIP3">
                 <property name="geometry">
                  <rect>
-                  <x>160</x>
-                  <y>10</y>
+                  <x>150</x>
+                  <y>0</y>
                   <width>41</width>
                   <height>30</height>
                  </rect>
@@ -674,8 +734,8 @@
                <widget class="QSpinBox" name="sbNewDeviceIP2">
                 <property name="geometry">
                  <rect>
-                  <x>110</x>
-                  <y>10</y>
+                  <x>100</x>
+                  <y>0</y>
                   <width>41</width>
                   <height>30</height>
                  </rect>
@@ -702,8 +762,8 @@
                <widget class="QLabel" name="label_2">
                 <property name="geometry">
                  <rect>
-                  <x>53</x>
-                  <y>20</y>
+                  <x>43</x>
+                  <y>13</y>
                   <width>16</width>
                   <height>16</height>
                  </rect>
@@ -715,8 +775,8 @@
                <widget class="QLabel" name="label_4">
                 <property name="geometry">
                  <rect>
-                  <x>153</x>
-                  <y>20</y>
+                  <x>144</x>
+                  <y>15</y>
                   <width>16</width>
                   <height>16</height>
                  </rect>
@@ -728,8 +788,8 @@
                <widget class="QSpinBox" name="sbNewDeviceIP1">
                 <property name="geometry">
                  <rect>
-                  <x>60</x>
-                  <y>10</y>
+                  <x>50</x>
+                  <y>0</y>
                   <width>41</width>
                   <height>30</height>
                  </rect>
@@ -794,6 +854,18 @@
         <string>Console</string>
        </attribute>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
         <item>
          <widget class="QPlainTextEdit" name="teConsoleOutput">
           <property name="acceptDrops">
