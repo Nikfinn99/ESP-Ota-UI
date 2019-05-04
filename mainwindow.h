@@ -39,6 +39,8 @@ private slots:
 
     void on_cbEraseFlash_toggled(bool checked);
 
+    void on_bRemoveDevice_clicked();
+
 private:
     QProcess *process;
     char last_char;

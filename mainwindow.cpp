@@ -169,10 +169,41 @@ void MainWindow::on_bAddNewDevice_clicked()
 
 }
 
+void MainWindow::on_bRemoveDevice_clicked()
+{
+    int row = ui->twDevices->currentRow ();
+    if(row >= 0){
+        QTableWidgetItem *item_name = ui->twDevices->item (row,0);
+        QTableWidgetItem *item_ip = ui->twDevices->item (row,1);
+
+        QMessageBox msgBox;
+        msgBox.setWindowTitle("Delete device?");
+        msgBox.setText(QString("Do you want to delete device \"") + item_name->text() + "\" with ip \"" + item_ip->text() + "\" ?");
+        msgBox.setStandardButtons(QMessageBox::Cancel | QMessageBox::Ok);
+        msgBox.setDefaultButton(QMessageBox::Cancel);
+
+        int ret = msgBox.exec();
+        switch (ret) {
+        case QMessageBox::Ok:
+
+            // remove single device
+            esp.device_names.removeOne (item_name->text ());
+            esp.device_ips.removeOne (item_ip->text ());
+
+            ui->twDevices->removeRow (row);
+
+            QMessageBox::information (this, "Removed", "Device was removed");
+            break;
+        case QMessageBox::Cancel:
+            break;
+        }
+    }
+}
+
 void MainWindow::on_bClearAllDevices_clicked()
 {
     QMessageBox msgBox;
-    msgBox.setWindowTitle("Sure?");
+    msgBox.setWindowTitle("Delete ALL devices?");
     msgBox.setText("Do you want to delete all devices?");
     msgBox.setStandardButtons(QMessageBox::Cancel | QMessageBox::Ok);
     msgBox.setDefaultButton(QMessageBox::Cancel);
