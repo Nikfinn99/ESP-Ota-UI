@@ -121,8 +121,13 @@ void MainWindow::addDevice (const QString &name, const QString &ip){
 void MainWindow::on_bChooseImageFile_clicked()
 {
     QString image_path = QFileDialog::getOpenFileName (this, "Select ESP Image File","","Binary Image (*.bin)");
-    ui->leImagePath->setText (image_path);
-    esp.image_file = image_path;
+    if(image_path != ""){
+        ui->leImagePath->setText (image_path);
+        esp.image_file = image_path;
+    }
+    else{
+        QMessageBox::warning (this,"No file chosen", "No valid image file for uploading has been chosen!");
+    }
 }
 
 void MainWindow::on_rbUploadProgram_toggled(bool checked)
