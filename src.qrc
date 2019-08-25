@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/esp_upload.png</file>
+        <file>resources/esp_upload.ico</file>
+    </qresource>
+</RCC>

@@ -26,14 +26,19 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
 
 HEADERS += \
         mainwindow.h \
-    variables.h
+    variables.h \
 
 FORMS += \
         mainwindow.ui
+
+RESOURCES += \
+    src.qrc
+
+RC_ICONS = resources/esp_upload.ico
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

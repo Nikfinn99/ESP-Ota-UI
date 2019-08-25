@@ -6,12 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>690</width>
-    <height>429</height>
+    <width>678</width>
+    <height>417</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>OTA Upload</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="src.qrc">
+    <normaloff>:/resources/esp_upload.ico</normaloff>:/resources/esp_upload.ico</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -30,7 +34,7 @@
     <item>
      <widget class="QTabWidget" name="twTabs">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -942,6 +946,8 @@ output</string>
   <tabstop>twTabs</tabstop>
   <tabstop>leImagePath</tabstop>
  </tabstops>
- <resources/>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
  <connections/>
 </ui>
