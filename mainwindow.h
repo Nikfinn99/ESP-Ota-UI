@@ -17,6 +17,9 @@ public:
     ~MainWindow();
 
 private slots:
+
+    void readProcessData();
+
     void on_bChooseImageFile_clicked();
     void on_rbUploadProgram_toggled(bool checked);
     void on_rbUploadSpiffs_toggled(bool checked);
@@ -27,18 +30,11 @@ private slots:
     void on_sbUploadPort_valueChanged(int arg1);
     void on_leUploadPasswd_textChanged(const QString &arg1);
     void on_bUpload_clicked();
-    void readProcessData();
-
     void on_bClearOutput_clicked();
-
     void on_twUploadMethod_currentChanged(int index);
-
     void on_sbComPort_valueChanged(int arg1);
-
     void on_cbUploadSpeed_currentIndexChanged(int index);
-
     void on_cbEraseFlash_toggled(bool checked);
-
     void on_bRemoveDevice_clicked();
 
 private:
